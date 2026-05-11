@@ -992,6 +992,6 @@ elif st.session_state.page == "output":
     st.markdown("<div style='height:3rem'></div>", unsafe_allow_html=True)
     st.markdown("""
     <div style="text-align:center; color:#2e3d50; font-size:0.68rem; letter-spacing:0.05em;">
-        ⚡ Creatrix — Creator Intelligence Platform · Powered by Groq + YouTube Data API · Powered by Groq + YouTube Data API
+        ⚡ Creatrix — Creator Intelligence Platform · Powered by Groq + YouTube · Built by Mahitha Bhagavathi
     </div>
     """, unsafe_allow_html=True)

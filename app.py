@@ -1,5 +1,3 @@
-python
-
 import streamlit as st
 from utils.youtube import get_channel_data, get_channel_videos
 from utils.metrics import calculate_metrics

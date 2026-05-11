@@ -22,8 +22,9 @@ st.set_page_config(
 )
 
 # ─── API KEYS ─────────────────────────────────────────────────────────────────
-YOUTUBE_API_KEY = st.secrets["YOUTUBE_API_KEY"]
-GROQ_API_KEY    = st.secrets["GROQ_API_KEY"]
+try:
+    YOUTUBE_API_KEY = st.secrets["YOUTUBE_API_KEY"]
+    GROQ_API_KEY    = st.secrets["GROQ_API_KEY"]
 except:
     st.error("""
 ⚠️ API keys not found. Go to **Settings → Secrets** and add:

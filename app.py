@@ -22,17 +22,18 @@ st.set_page_config(
 )
 
 # ─── API KEYS ─────────────────────────────────────────────────────────────────
-try:
-    YOUTUBE_API_KEY = st.secrets["YOUTUBE_API_KEY"]
+YOUTUBE_API_KEY = st.secrets["YOUTUBE_API_KEY"]
     GROQ_API_KEY    = st.secrets["GROQ_API_KEY"]
 except Exception:
-    st.error(
-        "⚠️  API keys not found. Go to **Settings → Secrets** and add:\n\n"
-        "```\nYOUTUBE_API_KEY = 'AIza...'\nGROQ_API_KEY = 'gsk_...'\n
-```"
-    )
-    st.stop()
+    st.error("""
+⚠️ API keys not found. Go to **Settings → Secrets** and add:
 
+``` id="9w7hba"
+YOUTUBE_API_KEY = 'AIza...'
+GROQ_API_KEY = 'gsk_...'
+
+""")
+st.stop()
 # ─── SESSION STATE ────────────────────────────────────────────────────────────
 if "page" not in st.session_state:
     st.session_state.page = "input"
